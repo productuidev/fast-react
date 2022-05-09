@@ -39,7 +39,12 @@
 
     // 3. React.Fragment
     ReactDOM.render(
-      React.createElement(React.Fragment, null, `type이 "React 컴포넌트" 입니다.`),
+      React.createElement(
+        React.Fragment,
+        null,
+        `type이 "React 컴포넌트" 입니다.`,
+        `type이 "React 컴포넌트" 입니다.`,
+        `type이 "React 컴포넌트" 입니다.`),
       document.querySelector("#root")
     );
   </script>
