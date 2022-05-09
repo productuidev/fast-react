@@ -32,8 +32,14 @@
 
     // 2. Class Component
     class Component extends React.Component {
-      state = { count: 0, } // 객체 형태로
 
+      // state = { count: 0, } // 객체 형태로
+      
+      constructor(props) {
+        super(props);
+        this.state = { count:0 };
+      }
+      
       render() {
         return (
           <div>
