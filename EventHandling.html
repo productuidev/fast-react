@@ -39,6 +39,13 @@
                 count: state.count + 1,
               }))
           }}>클릭</button>  
+          <button onMouseEnter={()=>{
+              console.log("clicked");
+              this.setState((state)=>({
+                ...state,
+                count: state.count + 1,
+              }))
+          }}>클릭2</button>
           </div>
         )
       }
