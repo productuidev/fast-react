@@ -27,27 +27,26 @@
 
     class Component extends React.Component {
       state = {count: 0,}
+      constructor(props) {
+        super(props);
+        this.click = this.click.bind(this);
+      }
 
       render() {
         return (
           <div>
             <p>{this.state.count}</p>
-            <button onClick={()=>{
-              console.log("clicked");
-              this.setState((state)=>({
-                ...state,
-                count: state.count + 1,
-              }))
-          }}>클릭</button>  
-          <button onMouseEnter={()=>{
-              console.log("clicked");
-              this.setState((state)=>({
-                ...state,
-                count: state.count + 1,
-              }))
-          }}>클릭2</button>
+            <button onClick={this.click}>클릭</button> 
           </div>
         )
+      }
+
+      click() {
+        console.log("clicked");
+        this.setState((state)=>({
+          ...state,
+          count: state.count + 1,
+        }))
       }
     }
 
