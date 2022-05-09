@@ -38,15 +38,37 @@
     // );
 
     // 3. React.Fragment
+    // ReactDOM.render(
+    //   React.createElement(
+    //     React.Fragment,
+    //     null,
+    //     `type이 "React 컴포넌트" 입니다.`,
+    //     `type이 "React 컴포넌트" 입니다.`,
+    //     `type이 "React 컴포넌트" 입니다.`),
+    //   document.querySelector("#root")
+    // );
+
+    // 4. 복잡한 리액트 엘리먼트 모임
+    // <h1></h1>
+    // <div><div><h1>제목</h1></div></div>
     ReactDOM.render(
       React.createElement(
-        React.Fragment,
+        'div',
         null,
-        `type이 "React 컴포넌트" 입니다.`,
-        `type이 "React 컴포넌트" 입니다.`,
-        `type이 "React 컴포넌트" 입니다.`),
+        React.createElement(
+          'div',
+          null,
+          React.createElement('h1', null, '주제'),
+          React.createElement(
+            'ul',
+            null,
+            React.createElement('li', null, "React"),
+            React.createElement('li', null, "Vue")
+          )
+        )
+      ),
       document.querySelector("#root")
-    );
+    )
   </script>
 </body>
 </html>
