@@ -17,13 +17,25 @@
     console.log(React);
     console.log(ReactDOM);
 
+    // 1. Functional Component
     // {message: '안녕하세요!!!'}
-    function Component(props) {
-      return (
-        <div>
-        <h1>{props.message} 이것은 함수로 만든 컴포넌트 입니다.</h1>
-      </div>
-      );
+    // function Component(props) {
+    //   return (
+    //     <div>
+    //       <h1>{props.message} 이것은 함수로 만든 컴포넌트 입니다.</h1>
+    //     </div>
+    //   );
+    // }
+
+    // 2. Class Component
+    class Component extends React.Component {
+      render() {
+        return (
+          <div>
+            <h1>{this.props.message} 이것은 클래스로 만든 컴포넌트 입니다.</h1>
+          </div>
+        )
+      }
     }
 
     ReactDOM.render(
