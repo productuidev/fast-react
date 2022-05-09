@@ -27,6 +27,9 @@
     //   );
     // }
 
+    // defaultProps (functional)
+    // Component.defaultProps = { message: "기본값", }
+
     // 2. Class Component
     class Component extends React.Component {
       render() {
@@ -40,9 +43,6 @@
       // static defaultProps (class)
       static defaultProps = { message: "기본값2", }
     }
-
-    // defaultProps (functional)
-    // Component.defaultProps = { message: "기본값", }
 
     ReactDOM.render(
       <Component />,
