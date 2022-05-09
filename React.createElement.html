@@ -28,13 +28,19 @@
     // )
 
     // 2. 리액트 컴포넌트 type
-    const Component = () => {
-      return React.createElement('p', null, `type이 "React 컴포넌트" 입니다.`);
-    };
+    // const Component = () => {
+    //   return React.createElement('p', null, `type이 "React 컴포넌트" 입니다.`);
+    // };
 
-    // <Component></Component> => <Component /> => <p></p>
+    // // <Component></Component> => <Component /> => <p></p>
+    // ReactDOM.render(
+    //   React.createElement(Component, null, null), document.querySelector("#root")
+    // );
+
+    // 3. React.Fragment
     ReactDOM.render(
-      React.createElement(Component, null, null), document.querySelector("#root")
+      React.createElement(React.Fragment, null, `type이 "React 컴포넌트" 입니다.`),
+      document.querySelector("#root")
     );
   </script>
 </body>
