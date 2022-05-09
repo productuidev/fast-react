@@ -34,7 +34,7 @@
     class Component extends React.Component {
 
       // state = { count: 0, } // 객체 형태로
-      
+
       constructor(props) {
         super(props);
         this.state = { count:0 };
@@ -52,7 +52,11 @@
       componentDidMount() {
         setTimeout(()=>{
           // this.state.count = this.state.count + 1;
-          this.setState({count: this.state.count + 1,})
+          // this.setState({count: this.state.count + 1,})
+          this.setState((previousState) => {
+            const newState = {count: previousState.count + 1}
+            return newState;
+          })
         }, 1000)
       }
 
