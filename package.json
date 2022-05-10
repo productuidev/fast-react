@@ -1,5 +1,24 @@
 {
   "dependencies": {
-    "eslint-plugin-react-hooks": "^4.6.0-next-d20c3af9d-20220506"
-  }
+    "eslint-plugin-react-hooks": "^4.6.0-next-d20c3af9d-20220506",
+    "prettier": "^2.6.2"
+  },
+  "name": "fast-react",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/productuidev/fast-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/productuidev/fast-react/issues"
+  },
+  "homepage": "https://github.com/productuidev/fast-react#readme"
 }
