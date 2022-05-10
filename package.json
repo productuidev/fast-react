@@ -1,7 +1,6 @@
 {
   "dependencies": {
-    "eslint-plugin-react-hooks": "^4.6.0-next-d20c3af9d-20220506",
-    "prettier": "^2.6.2"
+    "eslint-plugin-react-hooks": "^4.6.0-next-d20c3af9d-20220506"
   },
   "name": "fast-react",
   "description": "",
@@ -20,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/productuidev/fast-react/issues"
   },
-  "homepage": "https://github.com/productuidev/fast-react#readme"
+  "homepage": "https://github.com/productuidev/fast-react#readme",
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  }
 }
